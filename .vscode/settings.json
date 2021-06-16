@@ -1,0 +1,28 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#4184c0",
+        "activityBar.activeBorder": "#e7b7d1",
+        "activityBar.background": "#4184c0",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#e7b7d1",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#336a9b",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#4184c0",
+        "titleBar.activeBackground": "#336a9b",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#336a9b99",
+        "titleBar.inactiveForeground": "#e7e7e799",
+        "tab.activeBorder": "#4184c0"
+    },
+    "peacock.color": "#336a9b",
+    "files.associations": {
+        "*.jsx": "typescriptreact",
+        "*.html": "html",
+        "usedbyc.h": "c",
+        "sort.h": "c",
+        "__config": "cpp"
+    },
+    "liveServer.settings.multiRootWorkspaceName": "mastering-go"
+}
