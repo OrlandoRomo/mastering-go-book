@@ -36,8 +36,11 @@ func main() {
 
 	const (
 		p2_0 Power2 = 1 << iota
+                _
 		p2_2
+                _
 		p2_4
+                _
 		p2_6
 	)
 
