@@ -1,0 +1,24 @@
+Jun 24 15:23:27 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.service): Service only ran for 0 seconds. Pushing respawn out by 10 seconds.
+Jun 24 15:23:31 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.desktop[16511]): Service could not initialize: Unable to set current working directory. error = 2: No such file or directory, path = /Applications/TeamViewer.app/Contents/MacOS: 20F71: xpcproxy + 23787 [673][2E55E87B-4D87-3489-8730-FE75D5535FEA]: 0x2
+Jun 24 15:23:31 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.desktop[16511]): Service exited with abnormal code: 78
+Jun 24 15:23:31 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.desktop): Service only ran for 0 seconds. Pushing respawn out by 10 seconds.
+Jun 24 15:23:31 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.teamviewer[16512]): Service could not initialize: Unable to set current working directory. error = 2: No such file or directory, path = /Applications/TeamViewer.app/Contents/MacOS: 20F71: xpcproxy + 23787 [673][2E55E87B-4D87-3489-8730-FE75D5535FEA]: 0x2
+Jun 24 15:23:31 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.teamviewer[16512]): Service exited with abnormal code: 78
+Jun 24 15:23:31 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.teamviewer): Service only ran for 0 seconds. Pushing respawn out by 10 seconds.
+Jun 24 15:23:33 UTC MacBook-Pro Microsoft Edge Helper[2559]: Libnotify: notify_register_coalesced_registration failed with code 9 on line 2835
+Jun 24 15:23:37 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.service[16516]): Service could not initialize: Unable to set current working directory. error = 2: No such file or directory, path = /Applications/TeamViewer.app/Contents/MacOS: 20F71: xpcproxy + 23787 [673][2E55E87B-4D87-3489-8730-FE75D5535FEA]: 0x2
+Jun 24 15:23:37 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.service[16516]): Service exited with abnormal code: 78
+Jun 24 15:23:37 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.service): Service only ran for 0 seconds. Pushing respawn out by 10 seconds.
+Jun 24 15:23:41 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.desktop[16523]): Service could not initialize: Unable to set current working directory. error = 2: No such file or directory, path = /Applications/TeamViewer.app/Contents/MacOS: 20F71: xpcproxy + 23787 [673][2E55E87B-4D87-3489-8730-FE75D5535FEA]: 0x2
+Jun 24 15:23:41 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.desktop[16523]): Service exited with abnormal code: 78
+Jun 24 15:23:41 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.desktop): Service only ran for 0 seconds. Pushing respawn out by 10 seconds.
+Jun 24 15:23:41 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.teamviewer[16524]): Service could not initialize: Unable to set current working directory. error = 2: No such file or directory, path = /Applications/TeamViewer.app/Contents/MacOS: 20F71: xpcproxy + 23787 [673][2E55E87B-4D87-3489-8730-FE75D5535FEA]: 0x2
+Jun 24 15:23:41 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.teamviewer[16524]): Service exited with abnormal code: 78
+Jun 24 15:23:41 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.teamviewer): Service only ran for 0 seconds. Pushing respawn out by 10 seconds.
+Jun 24 15:23:45 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.apple.mdworker.shared.0F000000-0200-0000-0000-000000000000[16418]): Service exited due to SIGKILL | sent by mds[90]
+Jun 24 15:23:47 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.service[16538]): Service could not initialize: Unable to set current working directory. error = 2: No such file or directory, path = /Applications/TeamViewer.app/Contents/MacOS: 20F71: xpcproxy + 23787 [673][2E55E87B-4D87-3489-8730-FE75D5535FEA]: 0x2
+Jun 24 15:23:47 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.service[16538]): Service exited with abnormal code: 78
+Jun 24 15:23:47 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.service): Service only ran for 0 seconds. Pushing respawn out by 10 seconds.
+Jun 24 15:23:49 UTC MacBook-Pro Microsoft Edge Helper[1141]: Libnotify: notify_regi
+Jun 24 15:23:27 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.service): Service only ran for 0 seconds. Pushing respawn out by 10 seconds.
+Jun 24 15:23:27 UTC MacBook-Pro com.apple.xpc.launchd[1] (com.teamviewer.service): Service only ran for 0 seconds. Pushing respawn out by 10 se

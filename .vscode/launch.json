@@ -10,7 +10,7 @@
             "request": "launch",
             "mode": "auto",
             "program": "${fileDirname}",
-            "args": ["a", "1", "2"]
+            "args": ["/tmp/ipv4.log"]
         }
     ]
 }
