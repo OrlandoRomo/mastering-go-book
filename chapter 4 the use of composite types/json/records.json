@@ -1,0 +1,14 @@
+{
+    "Name": "JSON Example here",
+    "Surname": "Chapter 4",
+    "Phones": [
+        {
+            "Mobile": true,
+            "Number": "449332134"
+        },
+        {
+            "Mobile": true,
+            "Number": "449332134"
+        }
+    ]
+}

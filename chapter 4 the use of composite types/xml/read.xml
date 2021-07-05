@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Record>
+    <Name>Reading an XML</Name>
+    <Surname>Chapter 4</Surname>
+    <Phones>
+        <Mobile>true</Mobile>
+        <Number>449332134</Number>
+    </Phones>
+    <Phones>
+        <Mobile>true</Mobile>
+        <Number>alv</Number>
+    </Phones>
+</Record>
