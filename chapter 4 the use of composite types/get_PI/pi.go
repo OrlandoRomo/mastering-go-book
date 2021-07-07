@@ -60,7 +60,7 @@ func Pi(accuracy uint) *big.Float {
 		total.Mul(k9, k7)
 		total.Quo(total, k8)
 		pi.Add(pi, total)
-
+		fmt.Println()
 		k = k + 1
 	}
 	pi.Quo(pi, two2SixBig)
