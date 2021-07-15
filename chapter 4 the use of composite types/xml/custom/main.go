@@ -6,36 +6,35 @@ import (
 	"os"
 )
 
-type Employee struct {
-	XMLName   xml.Name `xml:"Employee"`
-	Id        int      `xml:"id,attr"`
-	FirstName string   `xml:"name>first"`
-	LastName  string   `xml:"name>last"`
-	Initials  string   `xml:"name>initials"`
-	Height    float32  `xml:"height,omitempty"`
-	Address
-	Comment string `xml:",comment"`
+type GetProductSellableRequest struct {
+	XMLName    xml.Name `xml:"GetProductSellableRequest"`
+	XMLNS      string   `xml:"xmlns,attr"`
+	WSVersion  WSVersion
+	CustomerID CustomerID
+	Password   Password
+	IsSellable IsSellable
 }
 
-type Address struct {
-	City    string
-	Country string
+type WSVersion struct {
+	WSVersion string `xml:"wsVersion" validate:"min=1"`
+	XMLNS     string `xml:"xmlns,attr"`
+}
+type CustomerID struct {
+	CustomerID string `xml:"id" validate:"min=1"`
+	XMLNS      string `xml:"xmlns,attr"`
+}
+type Password struct {
+	Password string `xml:"password" validate:"min=1"`
+	XMLNS    string `xml:"xmlns,attr"`
+}
+type IsSellable struct {
+	IsSellable bool   `xml:"isSellable" validate:"min=1"`
+	XMLNS      string `xml:"xmlns,attr"`
 }
 
 func main() {
-	bobJames := &Employee{
-		Id:        7,
-		FirstName: "Bob",
-		LastName:  "James",
-		Initials:  "BJ",
-		Height:    1.85,
-		Address: Address{
-			City:    "Missouri",
-			Country: "United States",
-		},
-	}
-	bobJames.Comment = "He is a jazz pianist"
-	output, err := xml.MarshalIndent(bobJames, "", "\t")
+	request := &GetProductSellableRequest{}
+	output, err := xml.MarshalIndent(request, "", "\t")
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
