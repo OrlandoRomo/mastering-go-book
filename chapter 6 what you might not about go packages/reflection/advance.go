@@ -59,7 +59,24 @@ func main() {
 	if !a1.CompareStruct(a2) {
 		fmt.Println("Not equal alv")
 	}
+
 	var f *os.File
 	PrintMethods(f)
+	fmt.Println()
+	fmt.Println()
+	m := make(map[string]bool)
+	m["orlando"] = true
+	m["dua lipa"] = true
+	mapR := reflect.ValueOf(m)
+	mapType := mapR.Type()
+	//map
+	fmt.Println("This is a: ", mapType.Kind())
+	//string
+	fmt.Println("With a key of type ", mapType.Key())
+	//bool
+	fmt.Println("And value of type of ", mapType.Elem())
 
+	for _, key := range mapR.MapKeys() {
+		fmt.Println("key: ", key, " value: ", mapR.MapIndex(key))
+	}
 }
