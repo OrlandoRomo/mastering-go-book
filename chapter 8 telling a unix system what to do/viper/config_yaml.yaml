@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  backend:
+    volumes:
+    - .:/go/src/mastering/go
+  db:
+    volumes:
+    - .dbata:/var/lib/mysql

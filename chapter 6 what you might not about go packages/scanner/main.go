@@ -21,7 +21,7 @@ func main() {
 			fmt.Println(err.Error())
 			break
 		}
-		// A file set is an object that represent the source of the files
+		// A file set is an object that represents the source of the files
 		fileSet := token.NewFileSet()
 		files := fileSet.AddFile(file, fileSet.Base(), len(f))
 		var scan scanner.Scanner

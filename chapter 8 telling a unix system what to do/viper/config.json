@@ -1,0 +1,7 @@
+{
+    "viper_config":{
+        "version": "1.2.3",
+        "language": "Golang",
+        "language_version": "1.17.2"
+    }
+}
