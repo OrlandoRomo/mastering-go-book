@@ -3,6 +3,7 @@ module mastering-go
 go 1.16
 
 require (
+	github.com/Arafatk/glot v0.0.0-20180312013246-79d5219000f0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/spf13/cobra v1.2.1 // indirect
 	github.com/spf13/viper v1.9.0 // indirect
