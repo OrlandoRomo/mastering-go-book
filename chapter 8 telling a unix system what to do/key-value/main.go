@@ -9,6 +9,7 @@ package main
 
 import (
 	"bufio"
+	"encoding/gob"
 	"fmt"
 	"log"
 	"os"
@@ -24,10 +25,13 @@ const (
 	Update = "Update"
 )
 
-var STORE_LOG = "/tmp/store_log.log"
+var (
+	StoreLog    = "/tmp/store_log.log"
+	StorageFile = "/tmp/storage.log"
+)
 
 func NewLogger() (*log.Logger, *os.File) {
-	file, err := os.OpenFile(STORE_LOG, os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
+	file, err := os.OpenFile(StoreLog, os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		panic(err)
 	}
@@ -35,11 +39,54 @@ func NewLogger() (*log.Logger, *os.File) {
 	logger.SetFlags(log.LstdFlags | log.Lshortfile)
 	return logger, file
 }
+
+func Save(s Store) error {
+	err := os.Remove(StorageFile)
+	if err != nil {
+		fmt.Println(err)
+	}
+	f, err := os.Create(StorageFile)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+
+	encoder := gob.NewEncoder(f)
+	err = encoder.Encode(s.store)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func Load(s *Store) error {
+	fmt.Println("Loading: ", StorageFile)
+	f, err := os.Open(StorageFile)
+	if err != nil {
+		return err
+	}
+	decoder := gob.NewDecoder(f)
+	err = decoder.Decode(&s.store)
+	if err != nil {
+		return err
+	}
+	fmt.Printf("%s loaded\n", StorageFile)
+	return nil
+}
+
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	logger, file := NewLogger()
 	defer file.Close()
 	s := NewStore()
+	err := Load(s)
+	if err != nil {
+		fmt.Println(err.Error())
+	}
+	err = Save(*s)
+	if err != nil {
+		fmt.Println(err)
+	}
 	for scanner.Scan() {
 		text := scanner.Text()
 		text = strings.TrimSpace(text)
@@ -66,6 +113,7 @@ func main() {
 		case Print:
 			s.Print()
 		case Stop:
+			Save(*s)
 			return
 		case Delete:
 			if !s.Delete(tokens[1]) {
